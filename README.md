@@ -5,7 +5,7 @@
 Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
 
 ### 2 
-Add req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).
+Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).
 
 ### 3
 Run `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`

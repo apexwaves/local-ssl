@@ -9,6 +9,27 @@ Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
 
 ### 2 
 Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).
+`sudo touch req-config.conf`  
+`[req]
+default_bits = 4096
+default_md = sha256
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = US
+ST = VA
+L = SomeCity
+O = MyCompany
+OU = MyDivision
+CN = 192.168.1.160
+[v3_req]
+basicConstraints = CA:TRUE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+IP.1 = 192.168.1.160`
 
 ### 3
 Run `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`

@@ -18,8 +18,8 @@ Add `ServerName 192.168.0.3` near the top your default-ssl.conf
 Restart apache `sudo service apache2 restart`
 
 ### 6
-On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL and export certificate
-In chrome security settings, navigate to manage certificates, trusted store tab, and import your certificate
+On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL and export certificate using default settings.
+In chrome security settings, navigate to manage certificates -> trust root certificates tab and import your new certificate
 
 ### 7
 Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate

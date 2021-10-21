@@ -30,7 +30,7 @@ extendedKeyUsage = serverAuth
 subjectAltName = @alt_names
 [alt_names]
 IP.1 = 192.168.1.160```
-
+  
 ### 3
 Run `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`
 

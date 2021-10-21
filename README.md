@@ -1,7 +1,8 @@
 # Local-SSL
 ##Overview: Local network self signed SSL certificates
 
-### 1 ### Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
+### 1
+Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
 
 ### 2 
 Add req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).

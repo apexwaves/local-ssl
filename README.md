@@ -2,8 +2,8 @@
 ## Overview: Local network self signed SSL certificates
 
 ### 1
-Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
-`cd /etc/ssl`
+Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts. 
+`cd /etc/ssl`  
 `sudo mkdir localcerts`
 
 ### 2 

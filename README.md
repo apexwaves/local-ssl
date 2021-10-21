@@ -1,6 +1,6 @@
 # Local-SSL
 ## Overview: Local network self signed SSL certificates  
-For Raspberry Pi, Ubuntu or other Debian based linux operating systems running an apache server.  
+For Raspberry Pi OS, Ubuntu or other Debian based linux operating systems running an apache server.  
 
 ### 1
 Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.  

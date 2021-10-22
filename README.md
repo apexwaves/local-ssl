@@ -48,8 +48,11 @@ IP.1 = 192.168.1.160
 
 #### 5 Restart apache `sudo service apache2 restart`
 
-#### 6 On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL, view certificate->details tab-save to file and export certificate using default settings.
- - Chrome: security settings, navigate to manage certificates -> trust root certificates tab and import your new certificate
+#### 6. Export SSL Cert
+On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL, view certificate->details tab-save to file and export certificate using default settings.
+
+#### Import SSL Cert
+ - Chrome: settings->privacy&security->security->manage certificates navigate to manage certificates -> trusted root certificate authorities tab and import your new certificate
  - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage 
 
 #### 7 Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate

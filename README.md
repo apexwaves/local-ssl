@@ -63,7 +63,7 @@ default-ssl.conf
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 		SSLEngine on
-		<strong>SSLCertificateFile /etc/ssl/localcerts/domain.crt</strong>
+		==SSLCertificateFile /etc/ssl/localcerts/domain.crt==
 		*SSLCertificateKeyFile /etc/ssl/localcerts/domain.key*		
 
 		<FilesMatch "\.(cgi|shtml|phtml|php)$">

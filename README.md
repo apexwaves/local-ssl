@@ -78,11 +78,11 @@ default-ssl.conf
 ```
 
 #### 5  
-Restart apache  
+#### Restart apache  
 `sudo service apache2 restart`
 
 #### 6.  
-Export SSL Cert
+#### Export SSL Cert  
 On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL, view certificate->details tab-save to file and export certificate using default settings.
 
 #### Import SSL Cert
@@ -90,4 +90,4 @@ On Chrome desktop, visit the ip address of your secure via https, click the warn
  - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage 
 
 #### 7  
-Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate
+#### Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate

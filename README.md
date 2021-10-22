@@ -12,7 +12,7 @@ Note:
  - OpenSSL must be installed
 Check if already installed  
 `dpkg -s openssl`  
-Install if not  
+Install if not already installed  
 `sudo apt install openssl`  
 ##
 

@@ -77,10 +77,12 @@ default-ssl.conf
 </IfModule>
 ```
 
-#### 5 Restart apache  
+#### 5  
+Restart apache  
 `sudo service apache2 restart`
 
-#### 6. Export SSL Cert
+#### 6.  
+Export SSL Cert
 On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL, view certificate->details tab-save to file and export certificate using default settings.
 
 #### Import SSL Cert

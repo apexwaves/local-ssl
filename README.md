@@ -53,7 +53,7 @@ Terminal
 #### 4  
 #### Edit default-ssl.conf
 Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files.
-Add `ServerName 192.168.0.3` near the top your default-ssl.conf.
+Add `ServerName 192.168.1.160` near the top your default-ssl.conf.
 
 default-ssl.conf
 ```<IfModule mod_ssl.c>

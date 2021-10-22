@@ -47,7 +47,6 @@ IP.1 = 192.168.1.160
   
 #### 3  
 #### Create cert using req-config.conf config file.
-Terminal 
 `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`
 
 #### 4  

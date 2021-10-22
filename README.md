@@ -8,13 +8,12 @@ This setup is currently working with Chrome 95 on Windows and Android
 
 Drawbacks: The new SSL cert must be installed on all devices that need to communicate with your local server over https , it is a fast process but could be an issue for large organizations. 
 
-#### 1 Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.  
+#### 1. Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.  
 `cd /etc/ssl`  
 `sudo mkdir localcerts`  
 `cd localcerts`
 
-### 2 
-Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).  
+### 2. Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).  
 `sudo touch req-config.conf`  
 
 req-config.conf  
@@ -41,11 +40,9 @@ subjectAltName = @alt_names
 IP.1 = 192.168.1.160
 ```
   
-### 3
-Run `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`
+### 3 Terminal `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`
 
-### 4
-Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files
+### 4 Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files
 Add `ServerName 192.168.0.3` near the top your default-ssl.conf
 
 ### 5

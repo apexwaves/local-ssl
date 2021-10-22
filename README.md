@@ -4,7 +4,7 @@ For Raspberry Pi OS, Ubuntu and other Debian based linux operating systems runni
 
 This write up was created with the hopes that it will aid setting up SSL certs on devices not accessible from the internet such as private home or business raspberry pi or ubuntu web servers that are only accessed on the local network.
 
-This setup is currently working with Chrome 95 on Windows and Android
+This setup is currently working with Chrome 95 on Windows and Android.
 
 Drawbacks: The new SSL cert must be installed on all devices that need to communicate with your local server over https. Its a fast process but could be an issue for some large organizations. 
 ##
@@ -45,14 +45,14 @@ IP.1 = 192.168.1.160
 ```
   
 #### 3  
-#### Create cert using req-config.conf config file
+#### Create cert using req-config.conf config file.
 Terminal 
 `sudo openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config req-config.conf`
 
 #### 4  
 #### Edit default-ssl.conf
-Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files
-Add `ServerName 192.168.0.3` near the top your default-ssl.conf
+Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files.
+Add `ServerName 192.168.0.3` near the top your default-ssl.conf.
 
 default-ssl.conf
 ```<IfModule mod_ssl.c>
@@ -89,7 +89,7 @@ On Chrome desktop, visit the ip address of your secure via https, click the warn
 
 #### Import SSL Cert
  - Chrome: settings->privacy&security->security->manage certificates navigate to manage certificates -> trusted root certificate authorities tab and import your new certificate
- - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage, install as CA certificate
+ - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage, install as CA certificate.
 
 #### 7  
-#### Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate
+#### Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate.

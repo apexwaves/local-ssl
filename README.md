@@ -6,7 +6,7 @@ This write up was created with the hopes that it will aid setting up SSL certs o
 
 This setup is currently working with Chrome 95 on Windows and Android
 
-Drawbacks: The new SSL cert must be installed on all devices that need to communicate with your local server over https , it is a fast process but could be an issue for large organizations. 
+Drawbacks: The new SSL cert must be installed on all devices that need to communicate with your local server over https. Its a fast process but could be an issue for large organizations. 
 ##
 
 #### 1 

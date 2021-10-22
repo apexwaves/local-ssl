@@ -89,7 +89,7 @@ On Chrome desktop, visit the ip address of your secure via https, click the warn
 
 #### Import SSL Cert
  - Chrome: settings->privacy&security->security->manage certificates navigate to manage certificates -> trusted root certificate authorities tab and import your new certificate
- - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage 
+ - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage, install as CA certificate
 
 #### 7  
 #### Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate

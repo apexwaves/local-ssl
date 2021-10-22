@@ -52,6 +52,31 @@ Terminal
 Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .csr and .key files
 #### Add `ServerName 192.168.0.3` near the top your default-ssl.conf
 
+default-ssl.conf
+```<IfModule mod_ssl.c>
+	<VirtualHost _default_:443>
+		ServerAdmin webmaster@localhost
+		ServerName 192.168.1.160
+		DocumentRoot /var/www/html
+    
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+		SSLEngine on
+		SSLCertificateFile /etc/ssl/localcerts/domain.crt
+		SSLCertificateKeyFile /etc/ssl/localcerts/domain.key		
+
+		<FilesMatch "\.(cgi|shtml|phtml|php)$">
+				SSLOptions +StdEnvVars
+		</FilesMatch>
+		<Directory /usr/lib/cgi-bin>
+				SSLOptions +StdEnvVars
+		</Directory>
+
+	</VirtualHost>
+</IfModule>
+```
+
 #### 5 Restart apache  
 `sudo service apache2 restart`
 

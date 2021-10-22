@@ -56,15 +56,15 @@ default-ssl.conf
 ```<IfModule mod_ssl.c>
 	<VirtualHost _default_:443>
 		ServerAdmin webmaster@localhost
-		*ServerName 192.168.1.160*
+		ServerName 192.168.1.160
 		DocumentRoot /var/www/html
     
 		ErrorLog ${APACHE_LOG_DIR}/error.log
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 		SSLEngine on
-		==SSLCertificateFile /etc/ssl/localcerts/domain.crt==
-		*SSLCertificateKeyFile /etc/ssl/localcerts/domain.key*		
+		SSLCertificateFile /etc/ssl/localcerts/domain.crt
+		SSLCertificateKeyFile /etc/ssl/localcerts/domain.key	
 
 		<FilesMatch "\.(cgi|shtml|phtml|php)$">
 				SSLOptions +StdEnvVars

@@ -16,7 +16,7 @@ Navigate to /etc/ssl and create a new localcerts folder, navigate to localcerts.
 `cd localcerts`
 
 #### 2. 
-Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3).  
+Create new file named req-config.conf file with your correct values, common name should be your local servers ip address (example 192.168.0.3). Tip: Nano editor pastes with a right click. 
 `sudo touch req-config.conf`  
 `sudo nano req-config.conf`
 

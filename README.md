@@ -2,7 +2,7 @@
 ## Local network self signed SSL certificates  
 For Raspberry Pi OS, Ubuntu and other Debian based linux operating systems running an apache server.  
 
-This write up was created with the hopes that it will aid setting up SSL certs on devices not accessible from the internet such as private home or business raspberry pi or ubuntu web servers that are only accessed on the local network.
+This write up was created with the hopes that it will aid setting up SSL certs on devices not accessible from the internet such as private home or business raspberry pi or ubuntu web servers that are only accessed on the local network :slightly_smiling_face:.
 
 This setup is currently working with Chrome 95 on Windows and Android.
 

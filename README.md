@@ -64,7 +64,7 @@ Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new ce
 `cd /etc/apache2/sites-available`  
 `sudo nano default-ssl.conf`  
 
-Add Lines  
+Add Lines(see example below)
 `ServerName 192.168.1.160`  
 `SSLCertificateFile /etc/ssl/localcerts/domain.crt`  
 `SSLCertificateKeyFile /etc/ssl/localcerts/domain.key`  

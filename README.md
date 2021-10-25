@@ -9,7 +9,7 @@ This setup is currently working with Chrome 95 on Windows and Android.
 Drawbacks: The new SSL cert must be installed on all devices that need to communicate with your local server over https. Its a fast process but could be an issue for some large organizations.  
   
 Note:  
- - This doc uses an example local ip address of 192.168.1.160 , you'll need to use your own web servers IP address.  
+ - This doc uses an example local IP address of 192.168.1.160 , you'll need to use your own web servers IP address.  
  - OpenSSL must be installed   
    
  Check if OpenSSL is already installed  

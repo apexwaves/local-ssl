@@ -60,6 +60,10 @@ IP.1 = 192.168.1.160
 #### 4  
 #### Edit default-ssl.conf
 Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .crt and .key files.  
+
+`cd /etc/apache2/sites-available`  
+`sudo nano default-ssl.conf`  
+
 Add Lines  
 `ServerName 192.168.1.160`  
 `SSLCertificateFile /etc/ssl/localcerts/domain.crt`  

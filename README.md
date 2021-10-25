@@ -101,12 +101,12 @@ default-ssl.conf
 `sudo service apache2 restart`
 
 #### 6  
-#### Export SSL Cert  
-On Chrome desktop, visit the ip address of your secure via https, click the warning icon to left of URL, view certificate->details tab->save to file. Export certificate using default settings.
+#### Export SSL cert via browser
+On Chrome desktop, visit the ip address of your server via https, click the warning icon to left of URL, view certificate->details tab->save to file. Export certificate using default settings.
 
-#### Import SSL Cert
+#### Import SSL cert via browser
  - Chrome: settings->privacy&security->security->manage certificates navigate to manage certificates -> trusted root certificate authorities tab and import your new certificate.
  - Android: Settings->Biometrics and Security->Other security settings->Install certificate from storage, install as CA certificate.
 
 #### 7  
-#### Perform a chrome restart `chrome://restart` to test your new valid self signed SSL certificate.
+#### Perform a chrome restart, in top URL bar enter `chrome://restart` to quickly restart chrome and visit your webserver IP address to test your new self signed SSL certificate.

@@ -60,7 +60,11 @@ IP.1 = 192.168.1.160
 #### 4  
 #### Edit default-ssl.conf
 Navigate to /etc/apache2/sites-available and edit default-ssl.conf to use new certificate paths for .crt and .key files.
-Add `ServerName 192.168.1.160` near the top your default-ssl.conf.
+Add `ServerName 192.168.1.160`  
+Add `SSLCertificateFile /etc/ssl/localcerts/domain.crt`  
+Add `SSLCertificateKeyFile /etc/ssl/localcerts/domain.key`  
+
+
 
 default-ssl.conf
 ```<IfModule mod_ssl.c>

@@ -11,6 +11,7 @@ Drawbacks: The new SSL cert must be installed on all devices that need to commun
 Note:  
  - This doc uses an example local IP address of 192.168.1.160 , you'll need to use your own web servers IP address.  
  - OpenSSL must be installed   
+ - You may need to set ownership and/or permissions for the folders/files your working in to edit your files.
    
  Check if OpenSSL is already installed  
 `dpkg -s openssl`  

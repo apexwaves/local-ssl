@@ -98,6 +98,10 @@ default-ssl.conf
 ```
 
 #### 5  
+
+`sudo a2enmod ssl`  
+`sudo a2ensite default-ssl`  
+
 #### Restart apache  
 `sudo service apache2 restart`
 
